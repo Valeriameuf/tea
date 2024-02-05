@@ -1,0 +1,98 @@
+.footer {
+  padding: 100px 0 20px;
+  background-color: #f7f2ea;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 40px;
+    margin-bottom: 100px;
+  }
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__nav-logo {
+    margin-right: 40px;
+  }
+  &__nav-contacts {
+    margin-top: 20px;
+  }
+  &__nav-phone::before {
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/call.svg");
+  }
+  &__bottom {
+    display: flex;
+  }
+  &__copy {
+    margin-right: 192px;
+    font-size: 16px;
+  }
+  &__social {
+    margin-top: 40px;
+    margin-left: 97px;
+  }
+}
+
+.products__title,
+.company__title,
+.contacts__title {
+  font-family: "Cormorant", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.footer__nav-phone,
+.footer__nav-email {
+  font-size: 13px;
+  position: relative;
+  padding-left: 32px;
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__nav-phone::before,
+.footer__nav-email::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/email.svg");
+}
+.contacts__text {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.products__item,
+.company__item {
+  margin-bottom: 20px;
+}
+.footer__blockquote-author {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.footer__blockquote-text {
+  margin-top: 80px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.partners-logo {
+  display: flex;
+  gap: 0 20px;
+  align-items: center;
+}
+
+.social__list {
+  display: flex;
+  gap: 0 20px;
+  align-items: center;
+  height: 22px;
+}
+.social__link {
+  display: grid;
+}

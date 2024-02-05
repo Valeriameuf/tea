@@ -1,0 +1,65 @@
+/* Header */
+.header {
+  &__inner {
+    min-height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+}
+.logo {
+  margin-bottom: 35px;
+}
+.menu {
+  &__btn {
+    display: none;
+    width: 40px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+  &--close {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: background-color 0.3s;
+  }
+  &__btn span {
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+  }
+  &__list {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 65px;
+    margin-left: 85px;
+    position: relative;
+    z-index: 3;
+  }
+}
+.mobile-nav,
+.menu__close {
+  display: none;
+}
+.user-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 20px;
+  &__item--search {
+    margin-left: 80px;
+  }
+}

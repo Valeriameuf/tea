@@ -1,0 +1,24 @@
+.reviews {
+  background-color: #f7f2ea;
+  padding: 60px 0;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 26px;
+  }
+  &__item {
+    flex-basis: 280px;
+  }
+  &__text {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  &__name {
+    font-weight: 600;
+    line-height: 1.35;
+  }
+}

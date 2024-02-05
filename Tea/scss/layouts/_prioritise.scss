@@ -1,0 +1,21 @@
+.prioritise {
+  padding: 150px 0;
+  &__list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 49px;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+.priorotise__text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,87 @@
+.mailing-list {
+  padding: 100px 0;
+  background-color: #f7f2ea;
+  background-image: url(../img/tea-opacyty.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  &__title {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  &__inner {
+    display: flex;
+    gap: 60px 40px;
+  }
+  &__text {
+    line-height: 1.5;
+    flex-basis: 580px;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 580px;
+  }
+  &__email {
+    border: none;
+    border-bottom: 1px solid #b8b58b;
+    background-color: transparent;
+    padding: 3px 15px;
+    width: 434px;
+    margin-right: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #151618;
+  }
+  &__email::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #b8b58b;
+  }
+  &__btn {
+    display: inline-block;
+    padding: 12px 41px;
+    background-color: #fff;
+    border: 1px solid #151618;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  &__label {
+    position: relative;
+    margin-top: 16px;
+  }
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding-left: 20px;
+  &__text {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+  &:checked + .checkbox-style::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #151618;
+    top: 1px;
+    left: 1px;
+    position: absolute;
+  }
+}
+.checkbox-style {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0;
+  top: 0;
+  border: 1px solid #151618;
+  margin-top: 5px;
+}

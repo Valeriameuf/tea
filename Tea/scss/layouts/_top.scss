@@ -1,0 +1,29 @@
+/* Top*/
+.top {
+  background-image: url("../img/backgraund.jpeg");
+  background-repeat: no-repeat;
+  background-repeat: bottom center;
+  background-size: cover;
+  &__inner {
+    min-height: 500px;
+    color: #fff;
+    font-family: "Cormorant", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1;
+    max-width: 780px;
+  }
+  &__text {
+    max-width: 560px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 48px;
+  }
+}
